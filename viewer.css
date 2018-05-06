@@ -1,11 +1,19 @@
 .random-article {
-  margin: 50px;
   text-align: center;
-  padding: 80px;
-  color: white;
+  color: black;
+  font-size: 1.5rem;
 }
 
 
   body {
-    background: teal;
+   background: teal;
 }
+
+.section-search {
+    padding: 20px;
+    margin-top: 100px;
+    margin-bottom: 300px;
+    margin-right: 280px;
+    margin-left: 280px;
+    
+ }
