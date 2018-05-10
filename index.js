@@ -3,8 +3,8 @@ function getRandom() {
 }
 
 $(document).ready(function() {
-  $("#input-search").on("click", function() {
-     $("ul").empty();
+  $(".button").keypress(function() {
+     $("#link").empty();
     var searchInput = $("#textName").val();
    
     $.ajax ({
@@ -22,7 +22,8 @@ $(document).ready(function() {
         var searchUrl = data[3][i];
         var title = data[1][i];
         var quote = data[2][i];
-        var html = "<div ><a href="+searchUrl+"><h4>"+title+"</h4>"+quote+"</a></div>";
+
+       var html = "<div ><a  href="+searchUrl+"><h4>"+title+"</h4>"+quote+"</a></div>";
          $("#link").append(html);
        }
     }
